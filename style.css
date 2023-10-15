@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.top {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.45),
+      rgba(128, 128, 128, 0.463)
+    ),
+    url(./wallpaperflare.com_wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  padding: 50px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.top .budget-title {
+  padding: 10px;
+}
+.budget-value {
+  text-align: center;
+  letter-spacing: 0.4ch;
+}
+
+.budget-income {
+  letter-spacing: 0.4ch;
+  margin-top: 10px;
+  flex-direction: row;
+  background-color: rgb(75, 236, 107);
+  justify-content: space-around;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.budget-expenses {
+  font-size: 1rem;
+  letter-spacing: 0.3ch;
+  margin-top: 10px;
+  background-color: rgba(244, 27, 27, 0.822);
+  justify-content: space-around;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+.right {
+  padding: 10px;
+}
+.right > .budget-expense-value {
+  margin-right: 20px;
+}
+.right > .budget-income-value {
+  margin-right: 20px;
+}
+
+/* calculation  */
+.calc {
+  width: 60%;
+  margin-top: 2%;
+  margin-left: 20%;
+  justify-content: space-evenly;
+}
+select {
+  border: none;
+  background-color: transparent;
+  padding: 1%;
+  border: 1px solid black;
+}
+select option {
+  background-color: aqua;
+}
+input {
+  border: 1px solid grey;
+  padding: 5px 10px;
+  border-radius: 2%;
+  text-align: center;
+}
+
+button {
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+}
+
+/* add input to ui display starts here  */
+.main-box {
+  display: flex;
+  margin-top: 2%;
+  width: 100vw;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.main-innerbox1{
+  display: flex;
+  flex-direction: column;
+}
+.main-innerbox2{
+  display: flex;
+  flex-direction: column;
+}
+
+.income-box {
+  letter-spacing: 0.4ch;
+  text-transform: capitalize;
+  color: green;
+}
+.expense-box {
+  letter-spacing: 0.4ch;
+  text-transform: capitalize;
+  color: red;
+}
+
+
+
+
+

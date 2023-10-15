@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Use App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- top structure starts from here -->
+
+    <div class="top flex">
+      <div class="budget">
+        <div class="budget-title">
+          Available Budget in <span class="budget-title-month">%month%</span>:
+        </div>
+        <div class="budget-value">+234333.43</div>
+        <div class="budget-income flex">
+          <div class="budget-income-text">Income</div>
+          <div class="right flex">
+            <div class="budget-income-value">+34333.00</div>
+            <div class="budget-income-percentage">&nbsp;</div>
+          </div>
+        </div>
+        <div class="budget-expenses flex">
+          <div class="budget-expenses-text">expenses</div>
+          <div class="right flex">
+            <div class="budget-expense-value">-14574.00</div>
+            <div class="budget-expenses-percentage">45%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- calculation add features starts from here -->
+    <div class="calc flex">
+      <input
+        type="text"
+        class="add-description"
+        placeholder="Add Description"
+      />
+
+      <input type="number" class="add-value" placeholder="Add value" />
+      <select name="" id="" class="add-type">
+        <option value="inc" id="adding" selected>+</option>
+        <option value="exp" id="subtract">-</option>
+      </select>
+
+      <button class="add-btn">✅</button>
+    </div>
+
+    <div class="main-box flex">
+      <div class="main-innerbox1">
+        <div class="income-box">income</div>
+        <div class="box1 ">
+          <div class="income-add" id="income-id">
+              <div class="item-description"></div>
+              <div class="itemvalue"></div>
+              <button class="item__delete--btn"></button>
+          </div>
+        </div>
+      </div>
+      <div class="main-innerbox2">
+        <div class="expense-box">expense</div>
+        <div class="box2">
+          <div class="expense-add " id="expense-id">
+              <div class="item-description"></div>
+              <div class="itemvalue"></div>
+              <button class="item__delete--btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Expense.js"></script>
+  </body>
+</html>
